@@ -350,7 +350,7 @@ Joyeux anniversaire, avec toute ma tendresse.`,
     {src:"",caption:"Notre photo ici"},{src:"",caption:"Un joli souvenir à ajouter"},
     {src:"",caption:"Une pensée en image"},{src:"",caption:"À compléter avec vos mots"}
   ],
-  musicSrc: "",
+  musicSrc: "musique.mp3",
   finalMessage: "Mon plus beau souhait aujourd’hui, c’est de te voir heureuse. Joyeux anniversaire, mon amour."
 };
 
@@ -498,7 +498,7 @@ function turnOffCandle(candle){
   }
 }
 function setupMusic(){
-  if(!CONFIG.musique.mp3()) return;
+  if(!CONFIG.if(!CONFIG.musicSrc.trim()) return;
   const audio=$("#birthdayAudio");audio.src=CONFIG.musicSrc;audio.volume=.35;
   $("#musicPlayer").classList.add("visible");
   $("#musicToggle").addEventListener("click",async()=>{
