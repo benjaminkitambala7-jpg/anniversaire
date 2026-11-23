@@ -498,7 +498,7 @@ function turnOffCandle(candle){
   }
 }
 function setupMusic(){
-  if(!CONFIG.if(!CONFIG.musicSrc.trim()) return;
+  if(!CONFIG.musicSrc.trim()) return;
   const audio=$("#birthdayAudio");audio.src=CONFIG.musicSrc;audio.volume=.35;
   $("#musicPlayer").classList.add("visible");
   $("#musicToggle").addEventListener("click",async()=>{
